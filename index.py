@@ -28,7 +28,7 @@ def handle_department(courses):
     global mark_of_student
     number = int(input('Enter the total number of students: '))
     title = f'Department of {user_department.capitalize()}\n'
-    #Since the list is being dynamic so append'a'
+    #Since the list is  dynamic so using append'a' and file location can be given as per user's requirement
     with open(f'D:\\Python\\education\\Students_Of_{user_department.capitalize()}.txt', 'a') as file:
         file.write(title)
         for i in range(number):
